@@ -157,7 +157,7 @@ const HomePage = () => {
               DMs
             </div>
             {addMembers.map((dm) => (
-              <div key={dm.memberid}
+              <div key={dm}
                 onClick={() => {
                   setTrigger("person");
                   // setId(dm.memberid)
@@ -200,7 +200,7 @@ const HomePage = () => {
 
           <div>
             {addMembers.map((member) => (
-              <div div key={member.memberid}
+              <div div key={member}
                 className={`${member.length >= 1} ? border px-2 py-2 : hidden`}
               >
                 {member}
@@ -234,7 +234,7 @@ const HomePage = () => {
 
           <div>
             {addMembers.map((member) => (
-              <div div key={member.memberid}
+              <div div key={member}
                 className={`${member.length >= 1} ? border px-2 py-2 : hidden`}
               >
                 {member}
