@@ -97,7 +97,7 @@ const DisplayChannel = ({ id }: DisplayChannelProps) => {
       <div className="w-full h-full flex flex-col justify-end items-center ">
         <div className="w-full flex flex-col items-start justify-center overflow-y-auto z-1">
           {messages.map((message) => (
-            <>
+            <div key={message.id}>
               <ChannelSpace
                 id={message.id}
                 timestamp={message.timestamp}
@@ -108,7 +108,7 @@ const DisplayChannel = ({ id }: DisplayChannelProps) => {
                 message={message.message}
               />
               {/* {console.log("good")} */}
-            </>
+            </div>
           ))}
         </div>
         <div className="w-full px-20 lg:px-20 md:px-15 sm:px-10 xs:px-5 flex space-x-3 ">
