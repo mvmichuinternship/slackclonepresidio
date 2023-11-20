@@ -200,7 +200,7 @@ const HomePage = () => {
 
           <div>
             {addMembers.map((member) => (
-              <div div key={member}
+              <div key={member}
                 className={`${member.length >= 1} ? border px-2 py-2 : hidden`}
               >
                 {member}
@@ -234,7 +234,7 @@ const HomePage = () => {
 
           <div>
             {addMembers.map((member) => (
-              <div div key={member}
+              <div key={member}
                 className={`${member.length >= 1} ? border px-2 py-2 : hidden`}
               >
                 {member}
