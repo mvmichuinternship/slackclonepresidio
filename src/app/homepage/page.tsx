@@ -167,6 +167,14 @@ const HomePage = () => {
                 {dm}
               </div>
             ))}
+
+            <div>
+              <Button  classname={""} onclick={()=>{
+                if (typeof window !== 'undefined' && window.localStorage) {
+                  localStorage.clear();
+                }
+              }}>Logout</Button>
+            </div>
           </div>
         </div>
         <div className="w-[75%] lg:w-[85%] md:w-[85%] sm:w-[85%] xs:w-[85%] h-full  ">
