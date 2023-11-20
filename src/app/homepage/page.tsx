@@ -139,7 +139,7 @@ const HomePage = () => {
               Channels
             </div>
             {addChannels.map((channel) => (
-              <div
+              <div key={channel.channelid}
                 onClick={() => {
                   channel.channelid && setTrigger("channel");
                   setId(channel.channelid);
@@ -157,7 +157,7 @@ const HomePage = () => {
               DMs
             </div>
             {addMembers.map((dm) => (
-              <div
+              <div key={dm.memberid}
                 onClick={() => {
                   setTrigger("person");
                   // setId(dm.memberid)
